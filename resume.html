@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
@@ -69,16 +70,35 @@
         <div class="h-12 bg-blue-950">
             <h1 class="text-white pl-4 pt-2 text-xl font-semibold">ACHIEVEMENTS</h1>
         </div>
+        
+        <!-- Input container -->
+        <div class="input-container">
+            
+                <div  class="grid grid-cols-2 p-6">
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">Title</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+                    </div>
 
-        <div class="grid grid-cols-2 p-6">
-            <div class="space-y-2 p-3">
-                <p class="font-semibold">Title</p>
-                <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
-            </div>
-            <div class="space-y-2 p-3">
-                <p class="font-semibold">Description</p>
-                <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
-            </div>
+                    <!-- delete Btn -->
+                    <div  class="absolute py-2 right-28  hidden deleteButton"><button  class=" px-2  text-2xl text-white bg-red-600 font-bold relative right-0 ">
+                        -
+                      </button></div>
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">Description</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
+                    </div>
+                </div>
+                    
+              </div>
+
+              <!-- Create Btn -->
+        <div class="p-6" >
+            <button  class=" addNewBtn px-2 text-center text-3xl text-white bg-blue-600 font-bold">
+                +
+              </button>
+              
         </div>
     </section>
 
@@ -89,42 +109,73 @@
             <h1 class="text-white pl-4 pt-2 text-xl font-semibold">EXPERIENCE</h1>
         </div>
 
-        <div class="grid grid-cols-3 p-6">
-            <!-- num 1 -->
-            <div class="gird grid-row-1">
+        <!-- main container -->
+      <div class="experience-container">
+
+        <!-- Data Container -->
+        <div class=" grid grid-cols-3 p-6 exContainer">
+            
+            <!-- Delete Button -->
+            <div  class="absolute py-2 right-4   hidden deleteButton"><button  class=" px-2  text-2xl text-white   bg-red-600 font-bold relative right-0 ">
+                -</button></div>
+
+                <!-- num 1 -->
+            <div class="grid grid-cols-1">
+                
                 <div class="space-y-2 p-3">
                     <p class="font-semibold">Title</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+                    <input class="  pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
                 </div>
+                
                 <div class="space-y-2 p-3">
                     <p class="font-semibold">Start Date</p>
                     <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
                 </div> 
+                
             </div>
+
+
             <!-- num 2 -->
-            <div class="gird grid-row-1">
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">Company / Organization</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
-                </div>
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">End Date</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
-                </div> 
-            </div>
-            <!-- num 3 -->
-            <div class="gird grid-row-1">
+
+            <div class="grid grid-cols-1">
+                
+               
+            <div class="space-y-2 p-3">
+                <p class="font-semibold">Company / Organization</p>
+                <input class="  pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+            </div> 
+
+            <div class="space-y-2 p-3">
+                <p class="font-semibold">End Date</p>
+                <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
+            </div> 
+                 
+       </div>
+            <!-- Num -3 -->
+
+            <div class="grid grid-cols-1">
+
                 <div class="space-y-2 p-3">
                     <p class="font-semibold">Location</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+                    <input class="  pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
                 </div>
+                
                 <div class="space-y-2 p-3">
                     <p class="font-semibold">Description</p>
                     <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
                 </div> 
             </div>
-
+           
         </div>
+    </div>
+      
+        <!-- Plus Button -->
+        <div class="p-6" >
+            <button  class=" addBtnEx px-2 text-center text-3xl text-white bg-blue-600 font-bold">
+                +
+              </button>  
+        </div>
+
     </section>
 
     <!-- EDUCATION -->
@@ -134,44 +185,73 @@
             <h1 class="text-white pl-4 pt-2 text-xl font-semibold">EDUCATION</h1>
         </div>
 
-        <div class="grid grid-cols-3 p-6">
-            <!-- num 1 -->
-            <div class="gird grid-row-1">
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">School</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
-                </div>
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">Start Date</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
-                </div> 
-            </div>
-            <!-- num 2 -->
-            <div class="gird grid-row-1">
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">Degree</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
-                </div>
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">End Date</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
-                </div> 
-            </div>
-            <!-- num 3 -->
-            <div class="gird grid-row-1">
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">City</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
-                </div>
-                <div class="space-y-2 p-3">
-                    <p class="font-semibold">Description</p>
-                    <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
-                </div> 
-            </div>
+        <!-- Main Cointainer -->
+        <div class="education-container">
 
+            <!-- Data Container -->
+        <div class=" grid grid-cols-3 p-6 eduContainer">
+
+        <!-- Delete Button -->
+            <div  class="absolute py-2 right-28   hidden deleteButton"><button  class=" px-2  text-2xl text-white   bg-red-600 font-bold relative right-0 ">
+                -</button></div>
+
+                <!-- num 1 -->
+                <div class="gird grid-cols-1">
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">School</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+                    </div>
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">Start Date</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
+                    </div> 
+
+                </div>
+
+                <!-- num 2 -->
+                <div class="gird grid-cols-1">
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">Degree</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+                    </div>
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">End Date</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="date"  >
+                    </div> 
+
+                </div>
+
+                <!-- num 3 -->
+                <div class="gird grid-cols-1">
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">City</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
+                    </div>
+
+                    <div class="space-y-2 p-3">
+                        <p class="font-semibold">Description</p>
+                        <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
+                    </div> 
+
+                </div>
+    
+            </div>
+    
+        </div>
+        <!-- Plus Button -->
+        <div class="p-6" >
+            <button  class=" addBtnEdu px-2 text-center text-3xl text-white bg-blue-600 font-bold">
+                +
+              </button>  
         </div>
 
     </section>
+
 
     <!-- PROJECTS -->
     <section class="w-[85%] mx-auto">
@@ -179,22 +259,42 @@
             <h1 class="text-white pl-4 pt-2 text-xl font-semibold">PROJECTS</h1>
         </div>
 
-        <div class="grid grid-cols-3 p-6">
+        <!-- Main Container -->
+        <div class="project-container">
+
+           <!-- Data Container -->
+        <div class="grid grid-cols-3 p-6 proContainer">
+
+            <!-- Delete Button -->
+        <div  class="absolute py-2 right-28   hidden deleteButton"><button  class=" px-2  text-2xl text-white   bg-red-600 font-bold relative right-0 ">
+            -</button></div>
+
+             <!-- num-1 -->
             <div class="space-y-2 p-3">
                 <p class="font-semibold">Project Name</p>
                 <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
             </div>
-
+            <!-- num-2 -->
             <div class="space-y-2 p-3">
                 <p class="font-semibold">Project link</p>
                 <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
             </div>
-
+            <!-- num-3 -->
             <div class="space-y-2 p-3">
                 <p class="font-semibold">Description</p>
                 <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo" >
             </div>
         </div>
+
+        </div>
+
+        <!-- Plus Button -->
+        <div class="p-6" >
+            <button  class=" addBtnPro px-2 text-center text-3xl text-white bg-blue-600 font-bold">
+                +
+              </button>  
+        </div>
+
     </section>
 
     <!-- skill section  -->
@@ -203,13 +303,29 @@
             <h1 class="text-white pl-4 pt-2 text-xl font-semibold">Skill</h1>
         </div>
 
-        <div class=" p-6">
-            <div class="space-y-2 p-3">
-                <p class="font-semibold">Project Name</p>
-                <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
-            </div>
+       <div class="skill-container">
 
+        <div class=" skillContainer p-6">
+            <!-- Delete Button -->
+    <div  class="absolute py-2 right-28   hidden deleteButton"><button  class=" px-2  text-2xl text-white   bg-red-600 font-bold relative right-0 ">
+        -</button></div>
+
+        <div class="space-y-2 p-3">
+            <p class="font-semibold">Skill</p>
+            <input class=" pl-1 w-full h-10 outline-none border rounded-md focus:border-blue-500 transition duration-300 ease-in-out" type="text" placeholder="e.g deo">
         </div>
+        
+    </div>
+
+       </div>
+
+       <!-- Plus Button -->
+       <div class="p-6" >
+        <button  class=" addBtnSkill px-2 text-center text-3xl text-white bg-blue-600 font-bold">
+            +
+          </button>  
+    </div>
+
     </section>
 
 
@@ -217,5 +333,8 @@
     <footer>
 
     </footer>
+
+    <script src="play.js"></script>
+    <script src="common.js"></script>
 </body>
 </html>

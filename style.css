@@ -3,3 +3,11 @@
 .font-Poppins {
     font-family: "Poppins", sans-serif;
 }
+
+/* Add this CSS for transition effect */
+.achievement {
+    opacity: 1; /* Initially set opacity to 0 */
+    transform: translateY(20px); /* Initially move the element down */
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* Apply transition effect */
+}
+
